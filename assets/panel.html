@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Viewer Page</title>
+        <link rel="stylesheet" href="viewer.css" type="text/css">
+
+        <meta http-equiv="content-type" charset="utf-8">
+    </head>
+    <body>
+        <div id="app" class="full-height"></div>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <!-- TODO:  remove the following script tag before submitting to Twitch for testing or production. -->
+        <!-- <script src="https://localhost.rig.twitch.tv:3000/twitch-ext.js"></script> -->
+        <!-- jquery -->
+        <script src="ext\jquery-3.3.1.min.js" charset="UTF-8"></script>
+        <!-- toastr -->
+        <link href="ext\toastr.css" rel="stylesheet"/>
+        <script src="ext\toastr.js" charset="UTF-8"></script>
+        <!-- tmi.js -->
+        <script src="ext\tmi.min.js"></script>
+        <!-- <script src="https://cdn.rawgit.com/tmijs/cdn/1c25be29/1.2.1/tmi.min.js"></script> -->
+
+        <img id="panel_title" src="img\ChatButton.png">
+        <p id="systemMessage">クリックでチャットにメッセージが送信されます</p>
+        <p id="testPanel"></p>
+        <div id="divbutton"></div>  <!-- ここにボタンが自動生成される-->
+        <script src="viewer.js"></script> 
+    </body>
+</html>

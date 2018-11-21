@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Config Page</title>
+        <link rel="stylesheet" href="viewer.css" type="text/css">
+        <meta http-equiv="content-type" charset="utf-8">
+    </head>
+    <body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+        <div id="app"></div>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <!-- TODO:  remove the following script tag before submitting to Twitch for testing or production. -->
+        <!-- <script src="https://localhost.rig.twitch.tv:3000/twitch-ext.js"></script> -->
+        <script src="ext\jquery-3.3.1.min.js" charset="UTF-8"></script>
+        <!-- toastr -->
+        <link href="ext\toastr.css" rel="stylesheet"/>
+        <script src="ext\toastr.js"  charset="UTF-8"></script>
+        
+        <h2>Config Page</h2>
+        <p id="appName">Send Message Button</p>
+        <p id="version">version:　0.0.2</p>
+        <p>Extension説明</p>
+        <p>このExtensionは、定型メッセージ送信を支援するボタンを設置します。 <br>ver0.0.2時点ではボタンのカスタマイズは未実装です。</p>
+        
+        <p>ボタン生成用テキスト。カンマ(,)区切りで入力してください。</p>
+        <textarea id="buttonarray"></textarea>
+        <button id="btnConfigSave">Save</button>
+        <p id="testConfig"></p>
+        
+        <script src="config.js" type="text/javascript"></script>
+    </body>
+</html>

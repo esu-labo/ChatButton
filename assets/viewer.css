@@ -1,0 +1,50 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding : 0px;
+    margin : 0px;
+    overflow: hidden;
+}
+
+img#panel_title {
+    width: 318px; /* 枠の線と被ってしまうの回避 */
+}
+
+div#divbutton {
+    height: 300px; /* スクロールバー出すのに必要*/
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h2 {
+    font-size : 18px;
+    margin : 0px;
+    color: white;
+}
+
+p {
+    font-size : 13px;
+    margin : 0px;
+    color: white;
+}
+
+textarea {
+    width : 90%;
+    margin: 0 auto;
+    height: 80px;
+}
+
+button {
+    padding : 1px;
+    font-size : 11px;
+    display: inline-block;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 4px #FF00CC;/*左線*/
+    color: #000000;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+button:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateX(1px) translateY(1px);
+}
